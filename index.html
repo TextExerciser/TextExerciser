@@ -1,0 +1,58 @@
+---
+layout: default
+title: TextExerciser
+ic: 1
+---
+
+
+		<div class="home-main">
+			<div class="home-item"><h1 class="ti">TextExerciser</h1></div>
+			<div class="home-item"><p class="ti sub-ti">An iterative, feedback-driven text input exerciser for Android apps.</p></div>
+            <div  class="home-item">
+				{% for post in site.posts %}
+			    {% if post.pidd == 2 %}
+				<span>{{ post.excerpt | markdownify }}<span>
+				{% endif %}
+				{% endfor %}
+				{% for post in site.posts %}
+			    {% if post.pidd == 1 %}
+				<span>{{ post.excerpt | markdownify }}<span>
+				{% endif %}
+				{% endfor %}
+			</div>
+		</div>
+
+		<div class="cv">
+			<h2>Contact us</h2>	
+			<div id="contact-link">
+				<div class="contact-item">
+					<h4>Yuyu He</h4>
+					<address>
+					<strong>Fudan University</strong><br>
+					<span class="obfuscate">heyy16@fudan.edu.cn</span>
+					</address>
+				</div>
+				<div class="contact-item">
+					<h4><a href="https://zzzxxxlll.github.io">Lei Zhang</a></h4>
+					<address>
+					<strong>Fudan University</strong><br>
+					<span class="obfuscate">lei_zhang14@fudan.edu.cn</span>
+					</address>
+				</div>
+				<div class="contact-item">
+					<h4><a href="https://yangzhemin.github.io">Zhemin Yang</a></h4>
+					<address>
+					<strong>Fudan University</strong><br>
+					<span class="obfuscate">yangzhemin@fudan.edu.cn</span>
+					</address>
+				</div>
+				<div class="contact-item">
+					<h4>Ancong Liu</h4>
+					<address>
+					<strong>Fudan University</strong><br>
+					<span class="obfuscate">acliu19@fudan.edu.cn</span>
+					</address>
+				</div>
+		    </div>
+        </div>
+	

@@ -1,0 +1,29 @@
+---
+layout: default
+title: TextExerciser
+ic: 2
+---
+
+		<div class="home-item">
+			
+			{% for post in site.posts %}
+			{% if post.pidd == 6 %}
+			<span>{{ post.excerpt | markdownify }}<span>
+			{% endif %}
+			{% endfor %}
+			
+			<video width="1000" height="800" controls>
+				<source src="../videos/te.mp4" type="video/mp4">
+			</video> 
+
+			{% for post in site.posts %}
+			{% if post.pidd == 7 %}
+			<span>{{ post.excerpt | markdownify }}<span>
+			{% endif %}
+			{% endfor %}
+
+			<video width="1000" height="800" controls>
+				<source src="../videos/ver.mp4" type="video/mp4">
+			</video>
+
+		</div>

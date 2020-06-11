@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+    
+    <link rel="stylesheet" type="text/css" href="/TextExerciser/css/main.css">
+  
+  </head>
+
+
+  <body>
+    <nav id="te-nav">
+<ul>
+  {% if page.ic == 1 %}
+  <li><a class="tag" href="/TextExerciser/" style="color: wheat;">TE Home</a></li>
+  {% else %}
+  <li><a class="tag" href="/TextExerciser/">TE Home</a></li>
+  {% endif %}
+
+  {% if page.ic == 7 %}
+  <li><a class="tag" href="/TextExerciser/overview" style="color: wheat;">OverView</a></li>
+  {% else %}
+  <li><a class="tag" href="/TextExerciser/overview">OverView</a></li>
+  {% endif %}
+
+  {% if page.ic == 2 %}
+  <li><a class="tag" href="/TextExerciser/demo" style="color: wheat;">Demo</a></li>
+  {% else %}
+  <li><a class="tag" href="/TextExerciser/demo">Demo</a></li>
+  {% endif %}
+
+  {% if page.ic == 4 %}
+  <li><a class="tag" href="/TextExerciser/download" style="color: wheat;">Downloads</a></li>
+  {% else %}
+  <li><a class="tag" href="/TextExerciser/download">Downloads</a></li>
+  {% endif %}
+
+  {% if page.ic == 5 %}
+  <li><a class="tag" href="/TextExerciser/pub" style="color: wheat;">Publications</a></li>
+  {% else %}
+  <li><a class="tag" href="/TextExerciser/pub">Publications</a></li>
+  {% endif %}
+
+</ul>
+    </nav>
+
+<div id="svg-container">
+</div>
+
+<div class="container">
+
+  {{ content }}
+
+</div>
+  
+  <footer id="te-footer">
+    <div>
+      TextExerciser
+    </div>
+  </footer>
+  </body>
+
+</html>
